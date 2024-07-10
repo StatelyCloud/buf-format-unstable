@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package test;
+
+message FormatTest {
+  option (foo.bar) = {
+    array: [
+      {key: "value"} /* comment */]
+  };
+}
